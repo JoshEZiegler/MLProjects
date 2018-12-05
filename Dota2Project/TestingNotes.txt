@@ -1,0 +1,4 @@
+2018-12-4:
+    The simple linear model doesn't seem to do very well. At first, the best I could do was 54% accuracy - less than if it simply guessed that radiant won every time. I think this makes sense because the features should be highly correlated - no hero alone can predict whether a team will win. I might try some feature engineering but it may work best to move to a DNN model.
+    A DNN model seems more natural because heroes belong better in an embedding column (which is a trained layer in a neural network) since there are 116 heroes, but there are simple, lower-dimensional groupings that can be made.
+    Before doing this I'm going to try putting all of the heroes into a single feature column and see if that helps. It should?
