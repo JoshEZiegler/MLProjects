@@ -73,3 +73,30 @@
 		prediction/mean 0.50139517
 		recall 0.55287874
 		global_step 500000
+
+2019-3-23:
+	DOTA2 TESTS: With the DNN and an embedding layer I was able to get 59.12% accuracy. This is a gain of 0.5% over the linear model, which doesn’t sound like much, but it is 10% increased accuracy gain beyond baseline. The fact that this gain isn’t reflected in the validation set accuracy is a bit concerning though. I’m not sure how this might be remedied. It could be that I am overfitting the test set somehow, but I’m not sure about this (learning_rate = 0.002, weight_decay=.0002, embedding_dimension=3, hidden_units=[8,4,4,4], steps=4e4)
+	DNN model, best case metric on test set:
+		accuracy 0.59121925
+		accuracy_baseline 0.5452414
+		auc 0.61524504
+		auc_precision_recall 0.6447893
+		average_loss 0.6684269
+		label/mean 0.5452414
+		loss 1994.1302
+		precision 0.60509056
+		prediction/mean 0.54183614
+		recall 0.7205189
+		global_step 50000
+	Validation set:
+		accuracy 0.5869868
+		accuracy_baseline 0.5434724
+		auc 0.61382484
+		auc_precision_recall 0.6421689
+		average_loss 0.66916025
+		label/mean 0.5434724
+		loss 33.45801
+		precision 0.60038733
+		prediction/mean 0.5420707
+		recall 0.7178271
+		global_step 50000
