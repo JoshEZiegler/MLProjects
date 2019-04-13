@@ -103,6 +103,7 @@
 
 2019-4-1:
 	DOTA2 TESTS: Did a bit better on both the test and validation with a bit more tuning. I’m not sure if this is how the variable and layers work, but with hidden_units=[10,10] the dnn learned p good and that does correspond on the total number of heroes… I was able to save this trained model to the ML dota2 directory so I can apply some test cases and see what the model thinks! I want to try to find some bad drafts and see what the computer thinks (weight_decay=4e-4, learning_rate=2.5e-3, hidden_units=[10,10], steps=3e4, batch_size=3e3)
+MODEL SAVED
 	Test set:
 		accuracy 0.59158844
 		accuracy_baseline 0.5452399
@@ -127,3 +128,30 @@
 		prediction/mean 0.5534632
 		recall 0.75902987
 		global_step 30000
+
+2019-4-13:
+	LOL TESTS: I was able to get almost 55% accuracy (4.7% gain over baseline accuracy) with a DNN model the gain is still p slight over the linear model. I save this model so I can do some test cases once I figure out how to do serving.(weight_decay=0.0008, learning_rate=0.0025, hidden_units=[10,10], steps=3e3, batch_size=3000) MODEL SAVED
+	Test set metrics:
+		accuracy 0.54958797
+		accuracy_baseline 0.50366473
+		auc 0.568422
+		auc_precision_recall 0.5605323
+		average_loss 0.68605167
+		label/mean 0.50366473
+		loss 1978.1339
+		precision 0.5490022
+		prediction/mean 0.5075455
+		recall 0.5922823
+		global_step 3000
+	Validation set metrics:
+		accuracy 0.5495492
+		accuracy_baseline 0.50042677
+		auc 0.5685406
+		auc_precision_recall 0.5591297
+		average_loss 0.6860394
+		label/mean 0.50042677
+		loss 34.295567
+		precision 0.5458012
+		prediction/mean 0.507441
+		recall 0.5950433
+		global_step 3000
