@@ -159,16 +159,16 @@ MODEL SAVED
 2019-05-06:
 	LOL Gold_diff tests: Was only able to get to loss=0.977 for the linear model with just the scaled gold_diff as the target. I believe base loss=1 so this is a gain of 2.3%, sort of comparable with the prediction power of the DNN/linear model with blue_win as the sole target. Despite this, it may be easier to train gold and win together than alone?
 
-Test set metrics:
-average_loss 0.97686446
-label/mean 0.0003589372
-loss 0.97685313
-prediction/mean 0.0021375013
-global_step 150000
----
-Validation set metrics:
-average_loss 0.962123
-label/mean 0.010293012
-loss 0.96212316
-prediction/mean 0.0026842875
-global_step 150000
+	Test set metrics:
+		average_loss 0.97686446
+		label/mean 0.0003589372
+		loss 0.97685313
+		prediction/mean 0.0021375013
+		global_step 150000
+		---
+		Validation set metrics:
+		average_loss 0.962123
+		label/mean 0.010293012
+		loss 0.96212316
+		prediction/mean 0.0026842875
+		global_step 150000
