@@ -166,9 +166,33 @@ MODEL SAVED
 		prediction/mean 0.0021375013
 		global_step 150000
 		---
-		Validation set metrics:
+	Validation set metrics:
 		average_loss 0.962123
 		label/mean 0.010293012
 		loss 0.96212316
 		prediction/mean 0.0026842875
 		global_step 150000
+
+2019-06-09:
+	LOL single target learning on new dataset (3e5 games). The loss was a bit higher on these, but I’m going to go ahead and go for it. The increase in loss was only 0.5, but that is about 1/4 of the gain over the base loss so it is fairly significant. I can just use old data if I’m concerned about getting a lower loss, but that isn’t really the point here so I’m going to start playing with the dual_head model.
+
+	Blue_win:
+	Test set metrics:
+		accuracy 0.53044343
+		accuracy_baseline 0.5049286
+		auc 0.5452918
+		auc_precision_recall 0.5311785
+		average_loss 0.69011754
+		label/mean 0.49507144
+		loss 0.69011706
+		precision 0.5305559
+		prediction/mean 0.49344492
+		recall 0.44743603
+		global_step 50000
+	gold_diff:
+	Test set metrics:
+		average_loss 0.98316014
+		label/mean 0.00010354905
+		loss 0.98316056
+		prediction/mean -0.00010493766
+		global_step 500000
