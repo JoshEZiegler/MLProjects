@@ -196,3 +196,12 @@ MODEL SAVED
 		loss 0.98316056
 		prediction/mean -0.00010493766
 		global_step 500000
+
+2019-06-23:
+	LOL dualhead_GoldWin testing: The first-order dual head model has gotten about as good accuracy as the single target win model. I used the same hidden layers for both targets, with only the linear output weights different (known as hard parameter sharing). The loss function is a linear combination of the mean square error for each target. I calibrated it to be equal contribution from each pre-training. This accuracy was difficult to obtain due to a local minimum in the loss. Parameters used for these results were AdamWOptimizer, learning_rate=3e-6, weight_decay=3e-5, steps=1e6, batch_size=1000, hidden_units=[8,8].
+	Test set metrics:
+		accuracy 0.53365046
+		auc 0.5324331
+		baseline_accuracy 0.5
+		loss 0.30886853
+		global_step 1000000
