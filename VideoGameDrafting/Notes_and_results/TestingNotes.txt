@@ -235,3 +235,15 @@ MODEL SAVED
 		prediction/mean 0.5446683
 		recall 0.73077303
 		global_step 1000
+
+For the dual_head model with weight=1:
+	Validation set metrics:
+		accuracy 0.58348
+		auc 0.5673834
+		baseline_accuracy 0.5
+		loss 0.6715519
+		global_step 10000
+
+
+2019-07-17:
+	Dota2 gold_diff testing: Baseline loss ~0.5
