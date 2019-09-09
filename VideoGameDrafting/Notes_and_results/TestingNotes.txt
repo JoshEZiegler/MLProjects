@@ -245,5 +245,5 @@ For the dual_head model with weight=1:
 		global_step 10000
 
 
-2019-07-17:
-	Dota2 gold_diff testing: Baseline loss ~0.5
+2019-07-20:
+	LOL single head blue_win testing: Double checked the max accuracy and found that the best single head matches (or exceeds) the accuracy of the double head model. So the gain is none. I would interpret this to mean that the sum of the losses isn't enough for the model to find the joint minimum of gold and blue_win. I would think this wouldn't be the case because I left a linear model for the output heads, but the learned internal representation might not be good enough or there might be too many parameters for it to learn effectively.
