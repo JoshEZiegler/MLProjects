@@ -1,0 +1,1 @@
+{"model_type": "penta_target_linear_with_embedding", "steps": 10000, "embedding_dims": 5, "auxiliary_weights": 0.2, "optimizer": "Adam", "hyper_parameters": {"learning_rate": 0.0010000000474974513, "decay": 0.0, "beta_1": 0.8999999761581421, "beta_2": 0.9990000128746033}}

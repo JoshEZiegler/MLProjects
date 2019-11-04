@@ -1,0 +1,21 @@
+TODO list ordered roughly by priority/ease of execution:
+
+- Train a variety of models to compare their embeddings 
+	-dual/triple/single target linear models written
+	-also penta (added tower_damage diff and total)
+	-maybe add some dense layers after embedding? 
+		-probably unnecessary
+		-could make embedding less good?
+- Add some more targets to the multi-target linear model to use collected data
+- Get hero data from dota2 files (npc_heroes mainly)
+	-need to learn how to parse .vpk files
+	-see https://developer.valvesoftware.com/wiki/KeyValues
+- Collect per-player gold/kill/death/xp data for per-player model
+- Write per-player gold/kill/death model
+	-Use hero -> embedding -> player stats
+	-combine with other hero embeddings?
+		-could use average of other 9 embeddings?
+	-Combine per-player model with a win prediction model (easy)
+- Write serving scripts as if going into production
+	-single model
+	-average outputs of a few models
