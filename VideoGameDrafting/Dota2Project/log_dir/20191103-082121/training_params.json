@@ -1,1 +1,1 @@
-{"model_type": "penta_target_linear_with_embedding", "steps": 10000, "embedding_dims": 5, "auxiliary_weights": 0.4, "optimizer": "Adam", "hyper_parameters": {"learning_rate": 0.0005000000237487257, "decay": 0.0, "beta_1": 0.8999999761581421, "beta_2": 0.9990000128746033}}
+{"model_type": "penta_target_linear_with_embedding", "steps": 10000, "batch_size":2000, "embedding_dims": 5, "auxiliary_weights": 0.4, "optimizer": "Adam", "hyper_parameters": {"learning_rate": 0.0005000000237487257, "decay": 0.0, "beta_1": 0.8999999761581421, "beta_2": 0.9990000128746033}}

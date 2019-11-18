@@ -6,7 +6,10 @@ TODO list ordered roughly by priority/ease of execution:
 	-maybe add some dense layers after embedding? 
 		-probably unnecessary
 		-could make embedding less good?
-- Add some more targets to the multi-target linear model to use collected data
+- Add EVEN MORE targets to the multi-target linear model to use collected data?
+- Write serving scripts as if going into production
+	-single model
+	-average outputs of a few models
 - Get hero data from dota2 files (npc_heroes mainly)
 	-need to learn how to parse .vpk files
 	-see https://developer.valvesoftware.com/wiki/KeyValues
@@ -16,6 +19,3 @@ TODO list ordered roughly by priority/ease of execution:
 	-combine with other hero embeddings?
 		-could use average of other 9 embeddings?
 	-Combine per-player model with a win prediction model (easy)
-- Write serving scripts as if going into production
-	-single model
-	-average outputs of a few models
