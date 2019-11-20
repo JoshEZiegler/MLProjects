@@ -1,10 +1,10 @@
 # MLProjects
 
-- [Overview](https://github.com/JoshEZiegler/MLProjects/edit/master/README.md#Overview)
-- [VideoGameDraftingProject](https://github.com/JoshEZiegler/MLProjects/edit/master/README.md#VideoGameDraftingProject)
-  - [Introduction](https://github.com/JoshEZiegler/MLProjects/edit/master/README.md#Introduction)
-  - [Results](https://github.com/JoshEZiegler/MLProjects/edit/master/README.md#Results)
-
+- [Overview](https://github.com/JoshEZiegler/MLProjects/README.md#Overview)
+- [VideoGameDrafting Project](https://github.com/JoshEZiegler/MLProjects/README.md#VideoGameDraftingProject)
+  - [Introduction](https://github.com/JoshEZiegler/MLProjects/README.md#Introduction)
+  - [Results](https://github.com/JoshEZiegler/MLProjects/README.md#Results)
+- [PaperTextMining Project](
 
 # Overview
 
