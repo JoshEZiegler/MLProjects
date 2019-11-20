@@ -28,7 +28,7 @@ The questions I sought to answer with this project was:
 
 
 ### Results
-The predictability of each game was equal and independent of model architecture. The accuracy of the model wasn't very great: about 3% better than simply choosing one team all the time.
+The predictability of each game was equal and independent of model architecture or auxiliary targets. The best accuracy of the model wasn't very great: about 3% better than simply choosing one team all the time.
 
 |   Game   | Base acc. | Best acc. | Gain |
 | -------- | --------- | --------- | ---- |
