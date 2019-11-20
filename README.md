@@ -41,7 +41,7 @@ The predictability of each game was equal and independent of model architecture 
 
 I find it very interesting that the gain in accuracy was strictly equal. I would interpret this result as implying that the players in both of these game have equal ability to pick advantageous character matchups. Or, conversely, the players in these games have equal ability to overcome the advantages and disadvantages of a character matchup through their play within a match.
 
-The types of model used were either a simple linear model, or a vanilla deep neural network (with either indicator input or embedding input). 
+The types of model used were either a simple linear model, or a vanilla deep neural network (with either indicator input or embedding input). As stated above, accuracy was unaffected by model type.
 
 I also tried using auxiliary targets (such as gold difference, tower kill difference) to improve generalizability of the model, but they didn't help. The auxiliary features to include are fairly limited, but including skill in *LoL* didn't change the accuracy. In *DotA 2* there is a game mode and skill feature that may change the accuracy, but given the results elsewhere I have my doubts.
 
