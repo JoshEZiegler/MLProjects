@@ -1,5 +1,10 @@
 # MLProjects
 
+- [Overview](https://github.com/JoshEZiegler/MLProjects/edit/master/README.md#Overview)
+- [VideoGameDraftingProject](https://github.com/JoshEZiegler/MLProjects/edit/master/README.md#VideoGameDraftingProject)
+  - [Introduction](https://github.com/JoshEZiegler/MLProjects/edit/master/README.md#Introduction)
+  - [Results](https://github.com/JoshEZiegler/MLProjects/edit/master/README.md#Results)
+
 
 # Overview
 
