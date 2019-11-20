@@ -1,10 +1,10 @@
 # MLProjects
 
-- [Overview](https://github.com/JoshEZiegler/MLProjects/README.md#Overview)
-- [VideoGameDrafting Project](https://github.com/JoshEZiegler/MLProjects/README.md#VideoGameDraftingProject)
-  - [Introduction](https://github.com/JoshEZiegler/MLProjects/README.md#Introduction)
-  - [Results](https://github.com/JoshEZiegler/MLProjects/README.md#Results)
-- [PaperTextMining Project](
+- [Overview](https://github.com/JoshEZiegler/MLProjects#Overview)
+- [VideoGameDrafting Project](https://github.com/JoshEZiegler/MLProjects#videogamedrafting-project)
+  - [Introduction](https://github.com/JoshEZiegler/MLProjects#Introduction)
+  - [Results](https://github.com/JoshEZiegler/MLProjects#Results)
+- [PaperTextMining Project](https://github.com/JoshEZiegler/MLProjects#videogamedrafting-project)
 
 # Overview
 
@@ -40,6 +40,8 @@ The predictability of each game was equal and independent of model architecture 
 | *LoL*    | 50.0%     | 53.4%     | 3.4% |
 
 I find it very interesting that the gain in accuracy was strictly equal. I would interpret this result as implying that the players in both of these game have equal ability to pick advantageous character matchups. Or, conversely, the players in these games have equal ability to overcome the advantages and disadvantages of a character matchup through their play within a match.
+
+## PaperTextMining Project
 
 The types of model used were either a simple linear model, or a vanilla deep neural network (with either indicator input or embedding input). As stated above, accuracy was unaffected by model type.
 
