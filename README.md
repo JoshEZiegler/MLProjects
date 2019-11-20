@@ -47,11 +47,13 @@ I also tried using auxiliary targets (such as gold difference, tower kill differ
 
 I also hoped that including many auxiliary targets could allow an embedding layer to be effectively learned, but the learned embedding layers seemed highly variable. To compare embeddings between trained models, I used SKLearn to do a principal component decomposition and plotted the first two dimensions (out of five). It may be that the variances of each principal component of the embedding were too similar to be clearly differentiated? For a more accurate comparison between trained models, I would like to investigate whether nearest neighbors are somewhat preserved. This doesn't appear likely though.
 
+---
+
 ## PaperTextMining Project
 
 ### Summary
 With this project I sought to use word embeddings to investigate latent information within a specifc subfield. The test subfield I chose was, naturally, my field of study: hexagonal boron nitride color centers. I was inspired by the recent paper in Nature that used word embeddings trainined on abstracts withing the field of material science to investigate latent information and make predictions about materials with interesting properties. I hoped that training a word embedding on a more specfic corpus of information might yield a nice summary of key pieces of information about hexagonal boron nitride color centers and perhaps lead to discovery of new information implicit in the corpus.
 
-The approach I intended to use was direct web-scraping of journal websites with a careful conversion into plain-text. After writing some code that did this effectively for a single family of journals (ACS), I found out that some journals have robots.txt and website structure that disallow and discourage web-scraping (I'm looking at you Physical Review). Physical Review does allow for requests of their corpus of publication data, but I wasn't sure my exploratory project worthy of approval. The only high level package I used to collect this data was the html parsing package BeautifulSoup.
+The approach I intended to use was direct web-scraping of journal websites with a careful conversion into plain-text. After writing some code that did this effectively for a single family of journals (ACS), I found out that some journals have robots.txt and website structure that disallow and discourage web-scraping (I'm looking at you Physical Review). Physical Review does allow for requests of their corpus of publication data, but I wasn't sure my exploratory project was worthy of approval. The only high level package I used to collect this data was the html parsing package BeautifulSoup.
 
 This realization discouraged me from exploring this project beyond collecting a partial corpus of plain-text data. I also wanted to focus on taking my other project (VideoGameDrafting) to as advanced a stage as possible. After making sufficient progress on that project, I may come back to explore my partial corpus.
