@@ -26,7 +26,6 @@ The questions I sought to answer with this project was:
 * Do auxiliary features/targets (i.e. skill level, gold difference, total gold) improve the model's predictive power?
 * Can an embedding layer be learned to understand relationships between different characters?
 
-
 ### Results
 The predictability of each game was equal and independent of model architecture or auxiliary targets. The best accuracy of the model wasn't very great: about 3% better than simply choosing one team all the time.
 
@@ -34,6 +33,8 @@ The predictability of each game was equal and independent of model architecture 
 | -------- | --------- | --------- | ---- |
 | *DotA 2* | 55.2%     | 58.6%     | 3.4% |
 | *LoL*    | 50.0%     | 53.4%     | 3.4% |
+
+I find it very interesting that the gain in accuracy was strictly equal. I would interpret this result as implying that the players in both of these game have equal ability to pick advantageous character matchups. Or, conversely, the players in these games have equal ability to overcome the advantages and disadvantages of a character matchup through their play within a match.
 
 The types of model used were either a simple linear model, or a vanilla deep neural network (with either indicator input or embedding input). 
 
