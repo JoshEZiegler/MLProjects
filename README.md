@@ -15,7 +15,8 @@ In particular:
 ## VideoGameDrafting Project
 ### Introduction
 With this project, I built a predictive model to determine the winner of a game given the "draft" of each of the two teams. I chose to model two games in the Multiplayer Online Battle Arena (MOBA) game genre due to personal interest and some preliminary knowledge. These games are called League of Legends (LOL) and Defense of the Ancient 2 (DOTA 2). In each of these games, the draft process consists of each team picking five characters from a pool of roughly 100. 
-These two games have competing communities, with fans of DOTA2 claiming it has greater character balance and variety. Training and identical model on these two games independently may help determine the veracity of the claim.
+
+These two games have competing communities, with fans of DOTA2 claiming it has greater character balance and variety. Training an identical model on these two games independently may help determine the veracity of the claim.
 
 The question I sought to answer with this project was:
 * Can you effectively predict the winner of a game given only the characters on each team?
