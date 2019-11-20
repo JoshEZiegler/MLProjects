@@ -10,7 +10,7 @@
 
 In this repository I'm exploring the tools of Data Science in order to develop skills for a future career.
 
-In particular:
+In particular, I have practiced:
 * Using calls to application program interfaces (APIs) or HTML requests to collect data
 * Processing collected data as needed using Python and BeautifulSoup
 * Exploring and storing data in SQL databases and Pandas DataFrames/CSV files
