@@ -5,7 +5,7 @@
   - [Introduction](https://github.com/JoshEZiegler/MLProjects#Introduction)
   - [Results](https://github.com/JoshEZiegler/MLProjects#Results)
 - [PaperTextMining Project](https://github.com/JoshEZiegler/MLProjects#papertextmining-project)
-
+  - [Summary](https://github.com/JoshEZiegler/MLProjects#Summary)
 # Overview
 
 In this repository I'm exploring the tools of Data Science in order to develop skills for a future career.
