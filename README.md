@@ -36,16 +36,20 @@ The predictability of each game was equal and independent of model architecture 
 
 |   Game   | Base acc. | Best acc. | Gain |
 | -------- | --------- | --------- | ---- |
-| *DotA 2* | 55.2%     | 58.6%     | 3.4% |
+| *DotA 2* | 55.2%     | 59.0%     | 3.8% |
 | *LoL*    | 50.0%     | 53.4%     | 3.4% |
 
-I find it very interesting that the gain in accuracy was strictly equal. I would interpret this result as implying that the players in both of these game have equal ability to pick advantageous character matchups. Or, conversely, the players in these games have equal ability to overcome the advantages and disadvantages of a character matchup through their play within a match.
+I find it very interesting that the gain in accuracy was about equal. I would interpret this result as implying that the players in both of these game have equal ability to pick advantageous character matchups. Or, conversely, the players in these games have equal ability to overcome the advantages and disadvantages of a character matchup through their play within a match.
 
 The types of model used were either a simple linear model, or a vanilla deep neural network (with either indicator input or embedding input). As stated above, accuracy was unaffected by model type.
 
 I also tried using auxiliary targets (such as gold difference, tower kill difference) to improve generalizability of the model, but they didn't help. The auxiliary features to include are fairly limited, but including skill in *LoL* didn't change the accuracy. In *DotA 2* there is a game mode and skill feature that may change the accuracy, but given the results elsewhere I have my doubts.
 
 I also hoped that including many auxiliary targets could allow an embedding layer to be effectively learned, but the learned embedding layers seemed highly variable. To compare embeddings between trained models, I used SKLearn to do a principal component decomposition and plotted the first two dimensions (out of five). It may be that the variances of each principal component of the embedding were too similar to be clearly differentiated? For a more accurate comparison between trained models, I would like to investigate whether nearest neighbors are somewhat preserved. This doesn't appear likely though.
+
+A possible route towards helping the *DotA 2* model is suggested by its confusion matrix, which shows that the model has issues with predicting the win of the dire side:
+
+![Image of confusion matrix for dota2](https://github.com/JoshEZiegler/MLProjects/blob/master/VideoGameDrafting/Notes_and_results/dota2_ConfusionMatrix_linear_singletarget_1Dembedding_20200226.png)
 
 ---
 
