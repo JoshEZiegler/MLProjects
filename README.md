@@ -20,7 +20,7 @@ In particular, I have practiced:
 ---
 ## VideoGameDrafting Project
 ### Introduction
-With this project, I built a predictive model to determine the winner of a game given the character selection of each of two teams. I chose to model two games in the multiplayer online battle arena (MOBA) game genre due to personal interest, preliminary knowledge, and, importantly, that they have functional API's. The two games are called *League of Legends* (*LoL*) and *Defense of the Ancient 2* (*DotA 2*). In each of these games, each team selects five characters from a pool of roughly 100. 
+With this project, I built a predictive model to determine the winner of a game given the character selection of each of two teams. I chose to model two games in the multiplayer online battle arena (MOBA) game genre due to personal interest, preliminary knowledge, and, importantly, that they have functional API's. The two games are called *League of Legends* (*LoL*) and *Defense of the Ancients 2* (*DotA 2*). In each of these games, each team selects five characters from a pool of roughly 100. 
 
 These two games have competing communities, with fans of *DotA 2* claiming it has greater character balance and variety compared to *LoL*. Training an identical model on these two games independently may help determine the veracity of this claim.
 
