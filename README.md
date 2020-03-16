@@ -32,12 +32,12 @@ The questions I sought to answer with this project was:
 * Can an embedding layer be learned to understand relationships between different characters?
 
 ### Results
-The predictability of each game was equal and independent of model architecture or auxiliary targets. The best accuracy of the model wasn't very great: about 3% better than simply choosing one team all the time.
+The predictability of each game was equal and independent of model architecture or auxiliary targets. The best accuracy of the model wasn't very great: about 4-5% better than simply choosing one team all the time.
 
 |   Game   | Base acc. | Best acc. | Gain |
 | -------- | --------- | --------- | ---- |
 | *DotA 2* | 55.2%     | 59.0%     | 3.8% |
-| *LoL*    | 50.0%     | 53.4%     | 3.4% |
+| *LoL*    | 50.6%     | 55.8%     | 5.2% |
 
 I find it very interesting that the gain in accuracy was about equal. I would interpret this result as implying that the players in both of these game have equal ability to pick advantageous character matchups. Or, conversely, the players in these games have equal ability to overcome the advantages and disadvantages of a character matchup through their play within a match.
 
@@ -47,9 +47,7 @@ I also tried using auxiliary targets (such as gold difference, tower kill differ
 
 I also hoped that including many auxiliary targets could allow an embedding layer to be effectively learned, but the learned embedding layers seemed highly variable. To compare embeddings between trained models, I used SKLearn to do a principal component decomposition and plotted the first two dimensions (out of five). It may be that the variances of each principal component of the embedding were too similar to be clearly differentiated? For a more accurate comparison between trained models, I would like to investigate whether nearest neighbors are somewhat preserved. This doesn't appear likely though.
 
-A possible route towards helping the *DotA 2* model is suggested by its confusion matrix, which shows that the model has issues with predicting the win of the dire side:
-
-![Image of confusion matrix for dota2](https://github.com/JoshEZiegler/MLProjects/blob/master/VideoGameDrafting/Notes_and_results/dota2_ConfusionMatrix_linear_singletarget_1Dembedding_20200226.png)
+I added more features in *LoL* and also removed some games that had suspiciously low gold totals (~2% of my corpus). The added features are region, and tags, info, and stats for every hero that were given in the hero *JSON* file. Similar features should be present in *Dota2* with a little data mining. These things didn't seem to affect the accuracy of most models, but one NN model was able to get a slightly better accuracy of ~5% over baseline.
 
 ---
 
